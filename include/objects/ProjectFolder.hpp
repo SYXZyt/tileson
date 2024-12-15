@@ -44,7 +44,7 @@ namespace tson
         {
             if(fs::is_regular_file(entry.path()))
             {
-                if(entry.path().extension() == ".world")
+                if(entry.path().extension() == fs::path(".world"))
                 {
                     m_hasWorldFile = true;
                     worldPath = entry.path();
